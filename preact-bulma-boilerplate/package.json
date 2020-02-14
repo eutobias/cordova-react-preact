@@ -1,0 +1,23 @@
+{
+  "name": "preact-bulma-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "clear": "rm -f ../cordova-react/www/*",
+    "build": "parcel build src/index.html --public-url ./ --out-dir ../cordova-react/www",
+    "build-cordova": "npm run clear && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.8.0",
+    "preact": "^10.3.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.25.0"
+  }
+}
